@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ManejandoUsuario</string>
+    <string-array name="cboDeportes">
+        <item>Fútbol</item>
+        <item>Baloncesto</item>
+        <item>Atletismo</item>
+        <item>Gimnasia</item>
+        <item>Boxeo</item>
+        <item>Tenis</item>
+        <item>Ciclismo</item>
+        <item>Voleibol</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

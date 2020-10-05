@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luismartinez.manejandousuario.MostrarUsuariosActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/lblVTituloMostrarUsuario"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="70dp"
+        android:text="Nombre:"
+        app:layout_constraintStart_toStartOf="@+id/lblVTituloMostrarUsuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="29dp"
+        android:text="Apellido:"
+        app:layout_constraintBottom_toTopOf="@+id/lblVMostrarApellido"
+        app:layout_constraintEnd_toEndOf="@+id/lblVTituloMostrarUsuario" />
+
+    <TextView
+        android:id="@+id/lblVMostrarNombre"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="27dp"
+        android:text="----------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarEdad"
+        app:layout_constraintStart_toStartOf="@+id/lblVMostrarEdad"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/lblVMostrarApellido"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="----------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblVMostrarNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:text="Rut:"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarNombre"
+        app:layout_constraintStart_toEndOf="@+id/lblVMostrarNombre"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/lblVMostrarRut"
+        android:layout_width="352dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="85dp"
+        android:layout_marginTop="86dp"
+        android:text="-----------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblVMostrarSexo"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarNombre"
+        app:layout_constraintStart_toEndOf="@+id/lblVMostrarNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblVMostrarApellido" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarEdad"
+        app:layout_constraintStart_toStartOf="@+id/lblVMostrarEdad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Sexo:"
+        app:layout_constraintBottom_toTopOf="@+id/lblVMostrarSexo"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarSexo"
+        app:layout_constraintStart_toStartOf="@+id/lblVMostrarSexo" />
+
+    <TextView
+        android:id="@+id/lblVMostrarEdad"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/lblVActualLista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/lblVMostrarSexo"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblVMostrarEdad"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarRut"
+        app:layout_constraintStart_toStartOf="@+id/lblVMostrarApellido" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="161dp"
+        android:layout_marginTop="161dp"
+        android:text="Deporte Favorito:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lblVMostrarEdad"
+        app:layout_constraintStart_toEndOf="@+id/lblVMostrarEdad"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/lblVMostrarDeporteF"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:text="----------"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/btnVAnteriorUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="9dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="@+id/lblVMinLista"
+        app:layout_constraintEnd_toStartOf="@+id/lblVMinLista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/btnVSiguienteUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="@+id/lblVMaxLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblVMaxLista"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/btnVVolverDesdeMostrarUsu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="6dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVSiguienteUsuario" />
+
+    <TextView
+        android:id="@+id/lblVActualLista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblVMaxLista"
+        app:layout_constraintEnd_toStartOf="@+id/lblVMaxLista"
+        app:layout_constraintStart_toEndOf="@+id/lblVMinLista" />
+
+    <TextView
+        android:id="@+id/lblVMinLista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblVActualLista"
+        app:layout_constraintEnd_toStartOf="@+id/lblVActualLista"
+        app:layout_constraintStart_toEndOf="@+id/btnVAnteriorUsuario" />
+
+    <TextView
+        android:id="@+id/lblVMaxLista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="13dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVSiguienteUsuario"
+        app:layout_constraintStart_toEndOf="@+id/lblVActualLista" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="Actual"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblVActualLista"
+        app:layout_constraintEnd_toEndOf="@+id/lblVActualLista" />
+
+
+</android.support.constraint.ConstraintLayout>
